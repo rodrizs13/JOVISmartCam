@@ -1,9 +1,9 @@
 
-// ALERT + PROMPT
+
 let nome = prompt("Digite seu nome:");
 alert("Bem-vindo, " + nome + "!");
 
-// LOGIN
+
 function login() {
     let u = usuario.value;
     let s = senha.value;
@@ -15,12 +15,12 @@ function login() {
     }
 }
 
-// BOTÃO
+
 function clicar() {
     resposta.innerText = "A IA foi ativada!";
 }
 
-// SLIDESHOW + TEXTO
+
 let imagens = ["cachhoro.png", "grava.png", "nova.png"];
 let textos = [
     "Fotos ilegíveis e dificuldade ao registrar conteúdos.",
@@ -36,7 +36,7 @@ function proxima() {
     textoSlide.innerText = textos[i];
 }
 
-// EVENTO + INICIAL
+
 document.addEventListener("DOMContentLoaded", () => {
     textoSlide.innerText = textos[0];
 
