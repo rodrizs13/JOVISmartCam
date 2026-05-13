@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>JOVI Smart Cam</title>
+<meta charset="UTF-8">
+<title>JOVI Smart Cam</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <h1>JOVI Smart Cam</h1>
 
-<p>Clique no botão para testar a IA:</p>
+<!-- LOGIN -->
+<h2>Login</h2>
+<input type="text" id="usuario" placeholder="Usuário"><br>
+<input type="password" id="senha" placeholder="Senha"><br>
+<button onclick="login()">Entrar</button>
 
-<button onclick="clicar()">Testar</button>
+<p id="status"></p>
 
+<!-- ASSISTENTE -->
+<h2>Assistente IA</h2>
+<button onclick="clicar()">Testar IA</button>
 <p id="resposta"></p>
 
-<script>
-function clicar() {
-    document.getElementById("resposta").innerText = "A IA foi ativada!";
-}
-</script>
+<!-- GALERIA -->
+<h2>Galeria Inteligente</h2>
+
+<img id="slide" src="cachhoro.png"><br>
+
+<p id="textoSlide"></p>
+
+<button onclick="proxima()">Próxima imagem</button>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
