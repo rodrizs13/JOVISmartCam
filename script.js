@@ -23,9 +23,9 @@ function clicar() {
 
 let imagens = ["cachhoro.png", "grava.png", "nova.png"];
 let textos = [
-    "Fotos ilegíveis e dificuldade ao registrar conteúdos.",
+    "IA escolhe automaticamente a melhor imagem.",
     "Caderno digital nítido e ganho de tempo.",
-    "IA escolhe automaticamente a melhor imagem."
+    "Fotos ilegíveis e dificuldade ao registrar conteúdos."
 ];
 
 let i = 0;
