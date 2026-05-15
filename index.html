@@ -2,36 +2,179 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JOVI Smart Cam</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div id="site" style="display:none;">
+
+<section class="hero">
+
+<span class="badge">JOVI AI Vision · Smart Cam</span>
+
+<img src="imagem.png" class="foto-celular">
+
 <h1>JOVI Smart Cam</h1>
 
+<p>Veja · Entenda · Aprenda</p>
 
-<h2>Login</h2>
-<input type="text" id="usuario" placeholder="Usuário"><br>
-<input type="password" id="senha" placeholder="Senha"><br>
-<button onclick="login()">Entrar</button>
+<div class="botoes">
+<a href="#slideshow" class="btn-azul">📷 Funcionalidades</a>
+<a href="#chat" class="btn-branco">🤖 Chat IA</a>
+</div>
 
-<p id="status"></p>
+</section>
 
+<div class="numeros">
 
-<h2>Assistente IA</h2>
-<button onclick="clicar()">Testar IA</button>
-<p id="resposta"></p>
+<div class="numero">
+<strong>IA</strong>
+<span>Smart Vision</span>
+</div>
 
+<div class="numero">
+<strong>4K</strong>
+<span>Ultra Qualidade</span>
+</div>
 
-<h2>Galeria Inteligente</h2>
+<div class="numero">
+<strong>ZEISS</strong>
+<span>Lentes Inteligentes</span>
+</div>
 
-<img id="slide" src="cachhoro.png"><br>
+<div class="numero">
+<strong>AI</strong>
+<span>Tempo Real</span>
+</div>
 
-<p id="textoSlide"></p>
+</div>
 
-<button onclick="proxima()">Próxima imagem</button>
+<section class="secao-padrao" id="slideshow">
+
+<h2>Funcionalidades</h2>
+
+<p class="subtitulo">
+Veja o que a inteligência artificial pode fazer
+</p>
+
+<div class="slide-box">
+
+<button class="seta esquerda" onclick="slideAnterior()">❮</button>
+
+<img id="slide" src="imagem.png">
+
+<button class="seta direita" onclick="proximoSlide()">❯</button>
+
+</div>
+
+<p id="texto-slide"></p>
+
+</section>
+
+<section class="secao-padrao" id="chat">
+
+<h2>Chat com IA</h2>
+
+<p class="subtitulo">
+Pergunte qualquer coisa sobre a câmera
+</p>
+
+<div class="chat-wrapper">
+
+<div id="chat-container" class="chat-container"></div>
+
+<div class="chat-input-area">
+
+<input
+id="chat-input"
+type="text"
+placeholder="Digite sua pergunta..."
+>
+
+<button class="btn-azul" onclick="enviarMensagem()">
+Enviar
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="funcionalidades">
+
+<div class="linha">
+
+<img src="imagem.png">
+
+<div class="texto">
+
+<small>01 — Smart Vision</small>
+
+<h2>IA que entende o ambiente</h2>
+
+<p>
+A câmera detecta automaticamente iluminação, objetos e rostos em tempo real.
+</p>
+
+</div>
+
+</div>
+
+<div class="linha invertido">
+
+<img src="legal.png">
+
+<div class="texto">
+
+<small>02 — Estabilização</small>
+
+<h2>Vídeos suaves e inteligentes</h2>
+
+<p>
+A estabilização por IA reduz tremores automaticamente durante gravações.
+</p>
+
+</div>
+
+</div>
+
+<div class="linha">
+
+<img src="ia.png">
+
+<div class="texto">
+
+<small>03 — Qualidade</small>
+
+<h2>Captura avançada em qualquer situação</h2>
+
+<p>
+A tecnologia inteligente ajusta foco, brilho e nitidez automaticamente.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<span class="nome-marca">JOVI Smart Cam</span>
+
+<span>© 2026 JOVI Mobile</span>
+
+</footer>
+
+</div>
 
 <script src="script.js"></script>
 
